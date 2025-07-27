@@ -70,74 +70,86 @@ body{
 
 /* ----------- Enhanced Responsive Styles Below ----------- */
 @media (max-width: 500px) {
+    /* Remove mobile-specific spacing, use PC view spacing */
     .container {
-        padding: 2vw;
-        min-height: 100vh;
-        width: 100vw;
-        box-sizing: border-box;
+        /* Use default styles */
     }
     .game {
-        height: 80vw;
-        width: 80vw;
-        max-width: 98vw;
-        max-height: 98vw;
-        aspect-ratio: 1/1;
-        margin-bottom: 5vw;
+        height: 400px;
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5vmin;
     }
     .box {
-        height: 24vw;
-        width: 24vw;
-        font-size: 12vw;
-        min-width: 22vw;
-        min-height: 22vw;
+        height: 120px;
+        width: 120px;
+        font-size: 8vmin;
+        border-radius: 12px;
+        border: none;
+        color: rgb(114, 27, 27);
+        background-color: white;
+        cursor: pointer;
     }
     .msgcontainer {
-        font-size: 5vw;
-        margin: 8vw 0;
-        padding: 4vw;
-        line-height: 1.4;
-        width: 100vw;
-        box-sizing: border-box;
+        text-align: center;
+        margin-top: 15vmin;
+        font-size: xx-large;
+        font-weight: bold;
+        display: none;
     }
     #resetbtn {
-        width: 80vw;
-        max-width: 200px;
-        font-size: 4vw;
-        padding: 3vw 0;
-        margin: 5vw auto;
-        display: block;
+        padding: 1rem;
+        font-size: 100%;
+        margin-top: 20px;
+        background-color: black;
+        color: aliceblue;
+        cursor: pointer;
+        border-radius: 12px;
+        border: none;
     }
     .heading {
-        font-size: 7vw;
-        padding: 4vw 0;
+        color:rgb(135, 208, 8);
+        text-align: center;
+        font-size: x-large;
+        padding: 2%;
     }
 }
 
 @media (max-width: 350px) {
+    /* Remove mobile-specific spacing, use PC view spacing */
     .heading {
-        font-size: 8vw;
-        padding: 5vw 0;
+        color:rgb(135, 208, 8);
+        text-align: center;
+        font-size: x-large;
+        padding: 2%;
     }
     .game {
-        height: 85vw;
-        width: 85vw;
-        max-width: 99vw;
-        max-height: 99vw;
-        aspect-ratio: 1/1;
+        height: 400px;
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5vmin;
     }
     .msgcontainer {
-        font-size: 7vw;
-        margin: 10vw 0;
-        padding: 5vw;
-        width: 100vw;
-        box-sizing: border-box;
+        text-align: center;
+        margin-top: 15vmin;
+        font-size: xx-large;
+        font-weight: bold;
+        display: none;
     }
     #resetbtn {
-        font-size: 6vw;
-        padding: 4vw 0;
-        margin: 8vw auto;
-        width: 90vw;
-        max-width: 180px;
-        display: block;
+        padding: 1rem;
+        font-size: 100%;
+        margin-top: 20px;
+        background-color: black;
+        color: aliceblue;
+        cursor: pointer;
+        border-radius: 12px;
+        border: none;
     }
 }
