@@ -36,6 +36,7 @@ boxes.forEach((box)=>{
         box.disabled=true;
 
         checkwinner();
+        draw();
     });
 });
 
@@ -56,6 +57,23 @@ const checkwinner = ()=>{
     }
 }
 
+const draw = ()=>{
+    let isDraw = true;
+    boxes.forEach((box)=>{
+        if(box.innerText === ""){
+            isDraw = false; 
+        }
+    });
+
+    if(isDraw){
+        msgcontainer.style.display="block";
+        msg.innerText = "It's a draw!";
+        boxes.forEach((box)=>{
+            box.disabled=true; 
+        });
+    }
+}
+
 const showWinner = (winner)=>{
     msgcontainer.style.display="block"
     msg.innerText= `Congratulations , ${winner} is the winner!`
@@ -72,6 +90,6 @@ resetbutton.addEventListener("click", ()=>{
         
         box.innerText="";
         box.disabled=false; // Enable all boxes for a new game
-        
+
     })
 })
