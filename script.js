@@ -69,6 +69,9 @@ resetbutton.addEventListener("click", ()=>{
     msgcontainer.style.display="none"
 
     boxes.forEach((box)=>{
-        location.reload();
+        
+        box.innerText="";
+        box.disabled=false; // Enable all boxes for a new game
+        
     })
 })
