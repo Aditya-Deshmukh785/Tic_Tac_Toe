@@ -71,58 +71,73 @@ body{
 /* ----------- Enhanced Responsive Styles Below ----------- */
 @media (max-width: 500px) {
     .container {
-        padding: 2vw; /* Add container padding */
-        min-height: 100vh; /* Ensure full height */
+        padding: 2vw;
+        min-height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
     }
-    
     .game {
         height: 80vw;
         width: 80vw;
-        margin-bottom: 5vw; /* Space after game */
+        max-width: 98vw;
+        max-height: 98vw;
+        aspect-ratio: 1/1;
+        margin-bottom: 5vw;
     }
-    
     .box {
         height: 24vw;
         width: 24vw;
         font-size: 12vw;
+        min-width: 22vw;
+        min-height: 22vw;
     }
-    
     .msgcontainer {
         font-size: 5vw;
-        margin: 8vw 0; /* Margin top and bottom */
-        padding: 4vw; /* Add padding */
-        line-height: 1.4; /* Better text spacing */
+        margin: 8vw 0;
+        padding: 4vw;
+        line-height: 1.4;
+        width: 100vw;
+        box-sizing: border-box;
     }
-    
     #resetbtn {
-        width: 80%;
+        width: 80vw;
         max-width: 200px;
         font-size: 4vw;
         padding: 3vw 0;
-        margin: 5vw auto; /* Center with margin */
+        margin: 5vw auto;
+        display: block;
+    }
+    .heading {
+        font-size: 7vw;
+        padding: 4vw 0;
     }
 }
 
 @media (max-width: 350px) {
     .heading {
-        font-size: 6vw;
-        padding: 4vw 0;
+        font-size: 8vw;
+        padding: 5vw 0;
     }
-    
     .game {
         height: 85vw;
         width: 85vw;
+        max-width: 99vw;
+        max-height: 99vw;
+        aspect-ratio: 1/1;
     }
-    
     .msgcontainer {
-        font-size: 6vw;
+        font-size: 7vw;
         margin: 10vw 0;
         padding: 5vw;
+        width: 100vw;
+        box-sizing: border-box;
     }
-    
     #resetbtn {
-        font-size: 5vw;
+        font-size: 6vw;
         padding: 4vw 0;
         margin: 8vw auto;
+        width: 90vw;
+        max-width: 180px;
+        display: block;
     }
 }
