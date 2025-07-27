@@ -71,9 +71,7 @@ body{
 /* ----------- Enhanced Responsive Styles Below ----------- */
 @media (max-width: 500px) {
     /* Remove mobile-specific spacing, use PC view spacing */
-    .container {
-        /* Use default styles */
-    }
+    
     .game {
         height: 400px;
         width: 400px;
