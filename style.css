@@ -70,84 +70,66 @@ body{
 
 /* ----------- Enhanced Responsive Styles Below ----------- */
 @media (max-width: 500px) {
-    /* Remove mobile-specific spacing, use PC view spacing */
+    .container {
+        padding: 0 5vw; /* Add horizontal padding to container */
+    }
     
     .game {
-        height: 400px;
-        width: 400px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        height: 85vw; /* Use viewport width for proportional scaling */
+        width: 85vw;  /* This maintains the square aspect ratio */
+        max-width: 400px; /* Don't exceed original size */
+        max-height: 400px;
         gap: 1.5vmin;
     }
+    
     .box {
-        height: 120px;
-        width: 120px;
+        height: calc((85vw - 6vmin) / 3); /* Calculate box size based on container */
+        width: calc((85vw - 6vmin) / 3);
+        max-height: 120px; /* Don't exceed original size */
+        max-width: 120px;
         font-size: 8vmin;
-        border-radius: 12px;
-        border: none;
-        color: rgb(114, 27, 27);
-        background-color: white;
-        cursor: pointer;
     }
+    
     .msgcontainer {
-        text-align: center;
-        margin-top: 15vmin;
-        font-size: xx-large;
-        font-weight: bold;
-        display: none;
+        margin-top: 8vw;
+        font-size: 5vw;
+        padding: 0 5vw; /* Add horizontal padding */
     }
+    
     #resetbtn {
-        padding: 1rem;
-        font-size: 100%;
-        margin-top: 20px;
-        background-color: black;
-        color: aliceblue;
-        cursor: pointer;
-        border-radius: 12px;
-        border: none;
-    }
-    .heading {
-        color:rgb(135, 208, 8);
-        text-align: center;
-        font-size: x-large;
-        padding: 2%;
+        margin-top: 6vw;
+        padding: 3vw 6vw;
+        font-size: 4vw;
     }
 }
 
 @media (max-width: 350px) {
-    /* Remove mobile-specific spacing, use PC view spacing */
+    .container {
+        padding: 0 3vw;
+    }
+    
     .heading {
-        color:rgb(135, 208, 8);
-        text-align: center;
-        font-size: x-large;
-        padding: 2%;
+        font-size: 6vw;
+        padding: 4vw 2%;
     }
+    
     .game {
-        height: 400px;
-        width: 400px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 1.5vmin;
+        height: 90vw;
+        width: 90vw;
     }
+    
+    .box {
+        height: calc((90vw - 6vmin) / 3);
+        width: calc((90vw - 6vmin) / 3);
+    }
+    
     .msgcontainer {
-        text-align: center;
-        margin-top: 15vmin;
-        font-size: xx-large;
-        font-weight: bold;
-        display: none;
+        font-size: 6vw;
+        margin-top: 6vw;
     }
+    
     #resetbtn {
-        padding: 1rem;
-        font-size: 100%;
-        margin-top: 20px;
-        background-color: black;
-        color: aliceblue;
-        cursor: pointer;
-        border-radius: 12px;
-        border: none;
+        font-size: 5vw;
+        padding: 4vw 8vw;
     }
 }
