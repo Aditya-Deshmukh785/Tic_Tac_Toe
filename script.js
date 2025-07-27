@@ -59,6 +59,10 @@ const checkwinner = ()=>{
 const showWinner = (winner)=>{
     msgcontainer.style.display="block"
     msg.innerText= `Congratulations , ${winner} is the winner!`
+
+    boxes.forEach((box)=>{
+        box.disabled=true; // Disable all boxes after a win
+    });
 }
 
 resetbutton.addEventListener("click", ()=>{
