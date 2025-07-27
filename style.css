@@ -59,7 +59,7 @@ body{
 
 .msgcontainer{
     text-align: center;
-    margin-top: 15vmin;
+    margin-top: 8vmin;
     font-size: xx-large;
     font-weight: bold;
     display: none;
@@ -69,74 +69,31 @@ body{
     color: rgb(135, 208, 8);
 }
 
-/* ----------- Balanced Responsive Styles Below ----------- */
+/* Mobile Responsive */
 @media (max-width: 500px) {
-    .container {
-        padding: 0 4vw;
-    }
-    
     .game {
         height: 80vw;
         width: 80vw;
-        max-width: 380px;
-        max-height: 380px;
-        gap: 1.5vmin;
-        margin-bottom: 4vw; /* Reduced spacing */
+        max-width: 350px;
+        max-height: 350px;
     }
     
     .box {
         height: calc((80vw - 6vmin) / 3);
         width: calc((80vw - 6vmin) / 3);
-        max-height: 115px;
-        max-width: 115px;
-        font-size: 7.5vmin;
+        max-height: 110px;
+        max-width: 110px;
+        font-size: 6vmin;
     }
     
     .msgcontainer {
-        margin: 3vw 0 4vw 0; /* Reduced margins */
-        font-size: 4.8vw;
-        padding: 2vw;
+        margin-top: 8vmin;
+        font-size: 5vw;
     }
     
     #resetbtn {
-        margin: 3vw auto 2vw auto; /* Reduced margins */
-        padding: 2.5vw 6vw;
-        font-size: 4.2vw;
-        width: auto;
-        min-width: 100px;
-    }
-}
-
-@media (max-width: 350px) {
-    .container {
-        padding: 0 3vw;
-    }
-    
-    .heading {
-        font-size: 5.5vw;
-        padding: 3vw 2%;
-    }
-    
-    .game {
-        height: 85vw;
-        width: 85vw;
-        margin-bottom: 5vw; /* Reduced spacing */
-    }
-    
-    .box {
-        height: calc((85vw - 6vmin) / 3);
-        width: calc((85vw - 6vmin) / 3);
-    }
-    
-    .msgcontainer {
-        font-size: 5.2vw;
-        margin: 4vw 0 5vw 0; /* Reduced margins */
-        padding: 3vw;
-    }
-    
-    #resetbtn {
-        font-size: 4.8vw;
-        padding: 3vw 8vw;
-        margin: 4vw auto 3vw auto; /* Reduced margins */
+        margin-top: 4vw;
+        padding: 3vw 6vw;
+        font-size: 4vw;
     }
 }
