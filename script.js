@@ -7,17 +7,17 @@ let msg = document.querySelector("#msg");
 let turnO = true;
 
 let winpattern = [
-  // Horizontal wins
+  
   [0, 1, 2],
   [3, 4, 5],
   [6, 7, 8],
 
-  // Vertical wins
+  
   [0, 3, 6],
   [1, 4, 7],
   [2, 5, 8],
 
-  // Diagonal wins
+  
   [0, 4, 8],
   [2, 4, 6]
 ];
@@ -79,7 +79,7 @@ const showWinner = (winner)=>{
     msg.innerText= `Congratulations , ${winner} is the winner!`
 
     boxes.forEach((box)=>{
-        box.disabled=true; // Disable all boxes after a win
+        box.disabled=true; 
     });
 }
 
@@ -89,7 +89,7 @@ resetbutton.addEventListener("click", ()=>{
     boxes.forEach((box)=>{
         
         box.innerText="";
-        box.disabled=false; // Enable all boxes for a new game
+        box.disabled=false;
 
     })
 })
