@@ -13,7 +13,7 @@ body{
     font-size: x-large;
     padding: 2%;
 }
-  
+
 .container{
     display: flex;
     justify-content: center;
@@ -67,7 +67,7 @@ body{
     color: rgb(135, 208, 8);
 }
 
-/* ---------- Responsive Additions Below ---------- */
+/* ----------- Responsive Styles Below ----------- */
 @media (max-width: 500px) {
     .game {
         height: 90vw;
@@ -81,13 +81,13 @@ body{
     .msgcontainer {
         font-size: 6vw;
         margin-top: 10vw;
-        margin-bottom: 8vw; /* add spacing below the message */
+        margin-bottom: 12vw; /* Increased spacing below message */
     }
     #resetbtn {
         width: 100%;
         font-size: 5vw;
         padding: 0.8rem 0;
-        margin-top: 8vw;  /* extra space above the button */
+        margin-top: 8vw; /* Extra space above button */
     }
 }
 
